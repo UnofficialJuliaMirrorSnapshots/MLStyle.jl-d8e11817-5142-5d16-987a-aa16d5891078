@@ -3,6 +3,10 @@ module TestModule
 using Test
 using MLStyle
 
+# @match 1 begin
+#     1
+# end
+
 MODULE = TestModule
 
 @use GADT
@@ -24,5 +28,6 @@ include("dot_expression.jl")
 include("typelevel.jl")
 include("untyped_lam.jl")
 include("nothing.jl")
+include("lambda.jl")
 
 end

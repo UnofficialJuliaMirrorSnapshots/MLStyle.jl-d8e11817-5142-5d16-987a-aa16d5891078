@@ -76,147 +76,151 @@ end
 function gen_match(target, cbl, init_loc::LineNumberNode, mod::Module)
     branches = begin
             begin
-                let _mangled_sym_417 = cbl
+                let _mangled_sym_420 = cbl
                     begin
-                        _mangled_sym_418 = begin
-                                function _mangled_sym_422(_mangled_sym_419::Expr)
-                                    nothing
-                                    Expr
-                                    begin
-                                        let (_mangled_sym_420, _mangled_sym_421) = ((_mangled_sym_419).head, (_mangled_sym_419).args)
-                                            begin
-                                                if (===)(_mangled_sym_420, :block)
-                                                    function _mangled_sym_424(_mangled_sym_423::(AbstractArray){_mangled_sym_425, 1}) where _mangled_sym_425
-                                                        nothing
-                                                        begin
-                                                            if (length)(_mangled_sym_423) >= 0
-                                                                _mangled_sym_426 = view(_mangled_sym_423, 1:(length)(_mangled_sym_423) - 0)
-                                                                begin
-                                                                    let branches = _mangled_sym_426
-                                                                        begin
-                                                                            _mangled_sym_428 = true
-                                                                            for _mangled_sym_427 = _mangled_sym_426
-                                                                                if begin
-                                                                                            _mangled_sym_441 = begin
-                                                                                                    function _mangled_sym_432(_mangled_sym_429::Expr)
-                                                                                                        nothing
-                                                                                                        Expr
-                                                                                                        begin
-                                                                                                            let (_mangled_sym_430, _mangled_sym_431) = ((_mangled_sym_429).head, (_mangled_sym_429).args)
-                                                                                                                begin
-                                                                                                                    if (===)(_mangled_sym_430, :call)
-                                                                                                                        function _mangled_sym_434(_mangled_sym_433::(AbstractArray){_mangled_sym_435, 1}) where _mangled_sym_435
-                                                                                                                            nothing
-                                                                                                                            begin
-                                                                                                                                if (length)(_mangled_sym_433) === 3
-                                                                                                                                    _mangled_sym_436 = _mangled_sym_433[1]
-                                                                                                                                    begin
-                                                                                                                                        if (===)(_mangled_sym_436, :(=>))
-                                                                                                                                            _mangled_sym_437 = _mangled_sym_433[2]
-                                                                                                                                            begin
-                                                                                                                                                let a = _mangled_sym_437
-                                                                                                                                                    begin
-                                                                                                                                                        _mangled_sym_438 = _mangled_sym_433[3]
+                        begin
+                            _mangled_sym_419 = begin
+                                    function _mangled_sym_424(_mangled_sym_421::Expr)
+                                        nothing
+                                        Expr
+                                        begin
+                                            let (_mangled_sym_422, _mangled_sym_423) = ((_mangled_sym_421).head, (_mangled_sym_421).args)
+                                                begin
+                                                    if (===)(_mangled_sym_422, :block)
+                                                        function _mangled_sym_426(_mangled_sym_425::(AbstractArray){_mangled_sym_427, 1}) where _mangled_sym_427
+                                                            nothing
+                                                            begin
+                                                                if (length)(_mangled_sym_425) >= 0
+                                                                    _mangled_sym_428 = view(_mangled_sym_425, 1:(length)(_mangled_sym_425) - 0)
+                                                                    begin
+                                                                        let branches = _mangled_sym_428
+                                                                            begin
+                                                                                _mangled_sym_430 = true
+                                                                                for _mangled_sym_429 = _mangled_sym_428
+                                                                                    if begin
+                                                                                                _mangled_sym_443 = begin
+                                                                                                        function _mangled_sym_434(_mangled_sym_431::Expr)
+                                                                                                            nothing
+                                                                                                            Expr
+                                                                                                            begin
+                                                                                                                let (_mangled_sym_432, _mangled_sym_433) = ((_mangled_sym_431).head, (_mangled_sym_431).args)
+                                                                                                                    begin
+                                                                                                                        if (===)(_mangled_sym_432, :call)
+                                                                                                                            function _mangled_sym_436(_mangled_sym_435::(AbstractArray){_mangled_sym_437, 1}) where _mangled_sym_437
+                                                                                                                                nothing
+                                                                                                                                begin
+                                                                                                                                    if (length)(_mangled_sym_435) === 3
+                                                                                                                                        _mangled_sym_438 = _mangled_sym_435[1]
+                                                                                                                                        begin
+                                                                                                                                            if (===)(_mangled_sym_438, :(=>))
+                                                                                                                                                _mangled_sym_439 = _mangled_sym_435[2]
+                                                                                                                                                begin
+                                                                                                                                                    let a = _mangled_sym_439
                                                                                                                                                         begin
-                                                                                                                                                            let b = _mangled_sym_438
-                                                                                                                                                                nothing
+                                                                                                                                                            _mangled_sym_440 = _mangled_sym_435[3]
+                                                                                                                                                            begin
+                                                                                                                                                                let b = _mangled_sym_440
+                                                                                                                                                                    nothing
+                                                                                                                                                                end
                                                                                                                                                             end
                                                                                                                                                         end
                                                                                                                                                     end
                                                                                                                                                 end
+                                                                                                                                            else
+                                                                                                                                                (MLStyle.MatchCore).failed
                                                                                                                                             end
-                                                                                                                                        else
-                                                                                                                                            (MLStyle.MatchCore).failed
                                                                                                                                         end
+                                                                                                                                    else
+                                                                                                                                        (MLStyle.MatchCore).failed
                                                                                                                                     end
-                                                                                                                                else
-                                                                                                                                    (MLStyle.MatchCore).failed
                                                                                                                                 end
                                                                                                                             end
-                                                                                                                        end
-                                                                                                                        function _mangled_sym_434(_)
-                                                                                                                            nothing
+                                                                                                                            function _mangled_sym_436(_)
+                                                                                                                                nothing
+                                                                                                                                (MLStyle.MatchCore).failed
+                                                                                                                            end
+                                                                                                                            _mangled_sym_436(_mangled_sym_433)
+                                                                                                                        else
                                                                                                                             (MLStyle.MatchCore).failed
                                                                                                                         end
-                                                                                                                        _mangled_sym_434(_mangled_sym_431)
-                                                                                                                    else
-                                                                                                                        (MLStyle.MatchCore).failed
                                                                                                                     end
                                                                                                                 end
                                                                                                             end
                                                                                                         end
+                                                                                                        function _mangled_sym_434(_mangled_sym_431)
+                                                                                                            nothing
+                                                                                                            (MLStyle.MatchCore).failed
+                                                                                                        end
+                                                                                                        _mangled_sym_434(_mangled_sym_429)
                                                                                                     end
-                                                                                                    function _mangled_sym_432(_mangled_sym_429)
+                                                                                                if _mangled_sym_443 === (MLStyle.MatchCore).failed
+                                                                                                    function _mangled_sym_442(_mangled_sym_441::LineNumberNode)
+                                                                                                        nothing
+                                                                                                        LineNumberNode
+                                                                                                        nothing
+                                                                                                    end
+                                                                                                    function _mangled_sym_442(_mangled_sym_441)
                                                                                                         nothing
                                                                                                         (MLStyle.MatchCore).failed
                                                                                                     end
-                                                                                                    _mangled_sym_432(_mangled_sym_427)
+                                                                                                    _mangled_sym_442(_mangled_sym_429)
+                                                                                                else
+                                                                                                    _mangled_sym_443
                                                                                                 end
-                                                                                            if _mangled_sym_441 === (MLStyle.MatchCore).failed
-                                                                                                function _mangled_sym_440(_mangled_sym_439::LineNumberNode)
-                                                                                                    nothing
-                                                                                                    LineNumberNode
-                                                                                                    nothing
-                                                                                                end
-                                                                                                function _mangled_sym_440(_mangled_sym_439)
-                                                                                                    nothing
-                                                                                                    (MLStyle.MatchCore).failed
-                                                                                                end
-                                                                                                _mangled_sym_440(_mangled_sym_427)
-                                                                                            else
-                                                                                                _mangled_sym_441
-                                                                                            end
-                                                                                        end !== nothing
-                                                                                    _mangled_sym_428 = false
-                                                                                    break
+                                                                                            end !== nothing
+                                                                                        _mangled_sym_430 = false
+                                                                                        break
+                                                                                    end
                                                                                 end
-                                                                            end
-                                                                            if _mangled_sym_428
-                                                                                branches
-                                                                            else
-                                                                                (MLStyle.MatchCore).failed
+                                                                                if _mangled_sym_430
+                                                                                    branches
+                                                                                else
+                                                                                    (MLStyle.MatchCore).failed
+                                                                                end
                                                                             end
                                                                         end
                                                                     end
+                                                                else
+                                                                    (MLStyle.MatchCore).failed
                                                                 end
-                                                            else
-                                                                (MLStyle.MatchCore).failed
                                                             end
                                                         end
-                                                    end
-                                                    function _mangled_sym_424(_)
-                                                        nothing
+                                                        function _mangled_sym_426(_)
+                                                            nothing
+                                                            (MLStyle.MatchCore).failed
+                                                        end
+                                                        _mangled_sym_426(_mangled_sym_423)
+                                                    else
                                                         (MLStyle.MatchCore).failed
                                                     end
-                                                    _mangled_sym_424(_mangled_sym_421)
-                                                else
-                                                    (MLStyle.MatchCore).failed
                                                 end
                                             end
                                         end
                                     end
-                                end
-                                function _mangled_sym_422(_mangled_sym_419)
-                                    nothing
-                                    (MLStyle.MatchCore).failed
-                                end
-                                _mangled_sym_422(_mangled_sym_417)
-                            end
-                        if _mangled_sym_418 === (MLStyle.MatchCore).failed
-                            _mangled_sym_418 = begin
-                                    if (===)(_mangled_sym_417, :_)
-                                        (throw)((SyntaxError)("Malformed syntax, expect `begin a => b; ... end` as match's branches."))
-                                    else
+                                    function _mangled_sym_424(_mangled_sym_421)
+                                        nothing
                                         (MLStyle.MatchCore).failed
                                     end
+                                    _mangled_sym_424(_mangled_sym_420)
                                 end
-                            if _mangled_sym_418 === (MLStyle.MatchCore).failed
-                                (throw)((InternalException)("Non-exhaustive pattern found!"))
+                            if _mangled_sym_419 === (MLStyle.MatchCore).failed
+                                begin
+                                    begin
+                                        _mangled_sym_419 = throw(SyntaxError("Malformed syntax, expect `begin a => b; ... end` as match's branches., at " * string(init_loc)))
+                                        if _mangled_sym_419 === (MLStyle.MatchCore).failed
+                                            begin
+                                                begin
+                                                    (throw)((InternalException)("Non-exhaustive pattern found, at #= /home/redbq/github/MLStyle.jl/bootstrap/MatchCore.jl:124 =#!"))
+                                                end
+                                            end
+                                        else
+                                            _mangled_sym_419
+                                        end
+                                    end
+                                end
                             else
-                                _mangled_sym_418
+                                _mangled_sym_419
                             end
-                        else
-                            _mangled_sym_418
                         end
                     end
                 end
@@ -225,90 +229,111 @@ function gen_match(target, cbl, init_loc::LineNumberNode, mod::Module)
     loc = init_loc
     branches_located = map(branches) do each
                 begin
-                    let _mangled_sym_442 = each
-                        begin
-                            _mangled_sym_443 = begin
-                                    function _mangled_sym_449(_mangled_sym_446::Expr)
-                                        nothing
-                                        Expr
-                                        begin
-                                            let (_mangled_sym_447, _mangled_sym_448) = ((_mangled_sym_446).head, (_mangled_sym_446).args)
+                    begin
+                        let _mangled_sym_445 = each
+                            begin
+                                begin
+                                    _mangled_sym_444 = begin
+                                            function _mangled_sym_451(_mangled_sym_448::Expr)
+                                                nothing
+                                                Expr
                                                 begin
-                                                    if (===)(_mangled_sym_447, :call)
-                                                        function _mangled_sym_451(_mangled_sym_450::(AbstractArray){_mangled_sym_452, 1}) where _mangled_sym_452
-                                                            nothing
-                                                            begin
-                                                                if (length)(_mangled_sym_450) === 3
-                                                                    _mangled_sym_453 = _mangled_sym_450[1]
+                                                    let (_mangled_sym_449, _mangled_sym_450) = ((_mangled_sym_448).head, (_mangled_sym_448).args)
+                                                        begin
+                                                            if (===)(_mangled_sym_449, :call)
+                                                                function _mangled_sym_453(_mangled_sym_452::(AbstractArray){_mangled_sym_454, 1}) where _mangled_sym_454
+                                                                    nothing
                                                                     begin
-                                                                        if (===)(_mangled_sym_453, :(=>))
-                                                                            _mangled_sym_454 = _mangled_sym_450[2]
+                                                                        if (length)(_mangled_sym_452) === 3
+                                                                            _mangled_sym_455 = _mangled_sym_452[1]
                                                                             begin
-                                                                                let pattern = _mangled_sym_454
+                                                                                if (===)(_mangled_sym_455, :(=>))
+                                                                                    _mangled_sym_456 = _mangled_sym_452[2]
                                                                                     begin
-                                                                                        _mangled_sym_455 = _mangled_sym_450[3]
-                                                                                        begin
-                                                                                            let body = _mangled_sym_455
-                                                                                                (pattern, body, loc)
+                                                                                        let pattern = _mangled_sym_456
+                                                                                            begin
+                                                                                                _mangled_sym_457 = _mangled_sym_452[3]
+                                                                                                begin
+                                                                                                    let body = _mangled_sym_457
+                                                                                                        (pattern, body, loc)
+                                                                                                    end
+                                                                                                end
                                                                                             end
                                                                                         end
                                                                                     end
+                                                                                else
+                                                                                    (MLStyle.MatchCore).failed
                                                                                 end
                                                                             end
                                                                         else
                                                                             (MLStyle.MatchCore).failed
                                                                         end
                                                                     end
-                                                                else
+                                                                end
+                                                                function _mangled_sym_453(_)
+                                                                    nothing
                                                                     (MLStyle.MatchCore).failed
+                                                                end
+                                                                _mangled_sym_453(_mangled_sym_450)
+                                                            else
+                                                                (MLStyle.MatchCore).failed
+                                                            end
+                                                        end
+                                                    end
+                                                end
+                                            end
+                                            function _mangled_sym_451(_mangled_sym_448)
+                                                nothing
+                                                (MLStyle.MatchCore).failed
+                                            end
+                                            _mangled_sym_451(_mangled_sym_445)
+                                        end
+                                    if _mangled_sym_444 === (MLStyle.MatchCore).failed
+                                        begin
+                                            begin
+                                                _mangled_sym_444 = begin
+                                                        function _mangled_sym_447(_mangled_sym_446::LineNumberNode)
+                                                            nothing
+                                                            LineNumberNode
+                                                            begin
+                                                                let curloc = _mangled_sym_446
+                                                                    begin
+                                                                        loc = curloc
+                                                                        nothing
+                                                                    end
                                                                 end
                                                             end
                                                         end
-                                                        function _mangled_sym_451(_)
+                                                        function _mangled_sym_447(_mangled_sym_446)
                                                             nothing
                                                             (MLStyle.MatchCore).failed
                                                         end
-                                                        _mangled_sym_451(_mangled_sym_448)
-                                                    else
-                                                        (MLStyle.MatchCore).failed
+                                                        _mangled_sym_447(_mangled_sym_445)
                                                     end
-                                                end
-                                            end
-                                        end
-                                    end
-                                    function _mangled_sym_449(_mangled_sym_446)
-                                        nothing
-                                        (MLStyle.MatchCore).failed
-                                    end
-                                    _mangled_sym_449(_mangled_sym_442)
-                                end
-                            if _mangled_sym_443 === (MLStyle.MatchCore).failed
-                                _mangled_sym_443 = begin
-                                        function _mangled_sym_445(_mangled_sym_444::LineNumberNode)
-                                            nothing
-                                            LineNumberNode
-                                            begin
-                                                let curloc = _mangled_sym_444
+                                                if _mangled_sym_444 === (MLStyle.MatchCore).failed
                                                     begin
-                                                        loc = curloc
-                                                        nothing
+                                                        begin
+                                                            _mangled_sym_444 = throw(SyntaxError("Malformed ast template, should be formed as `a => b`, at " * string(last_lnode) * "."))
+                                                            if _mangled_sym_444 === (MLStyle.MatchCore).failed
+                                                                begin
+                                                                    begin
+                                                                        (throw)((InternalException)("Non-exhaustive pattern found, at #= /home/redbq/github/MLStyle.jl/bootstrap/MatchCore.jl:132 =#!"))
+                                                                    end
+                                                                end
+                                                            else
+                                                                _mangled_sym_444
+                                                            end
+                                                        end
                                                     end
+                                                else
+                                                    _mangled_sym_444
                                                 end
                                             end
                                         end
-                                        function _mangled_sym_445(_mangled_sym_444)
-                                            nothing
-                                            (MLStyle.MatchCore).failed
-                                        end
-                                        _mangled_sym_445(_mangled_sym_442)
+                                    else
+                                        _mangled_sym_444
                                     end
-                                if _mangled_sym_443 === (MLStyle.MatchCore).failed
-                                    (throw)((InternalException)("Non-exhaustive pattern found!"))
-                                else
-                                    _mangled_sym_443
                                 end
-                            else
-                                _mangled_sym_443
                             end
                         end
                     end
@@ -318,13 +343,15 @@ function gen_match(target, cbl, init_loc::LineNumberNode, mod::Module)
                                 x !== nothing
                             end), xs)
                 end)
-    final = @format([init_loc, throw, InternalException], quote
-                
-                begin
-                    init_loc
-                    throw(InternalException("Non-exhaustive pattern found!"))
+    final = let loc_str = string(init_loc), exc_throw = Expr(:call, InternalException, "Non-exhaustive pattern found, at " * loc_str * "!")
+            @format [init_loc, throw, exc_throw] quote
+                    
+                    begin
+                        init_loc
+                        throw(exc_throw)
+                    end
                 end
-            end)
+        end
     result = mangle(mod)
     tag_sym = mangle(mod)
     foldr(branches_located, init=final) do (pattern, body, loc), last
